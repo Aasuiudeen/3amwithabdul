@@ -387,7 +387,7 @@ p {
 }
 /* Latest Episode */
 .episode-center {
-  margin-top: 100px;
+  margin-top: 50px;
   position: relative;
 }
 .epsiode-banner-container {
@@ -397,6 +397,12 @@ p {
   position: relative;
   overflow: hidden;
   margin-bottom: 24px;
+}
+.episode-title {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding-top: 82px;
 }
 .episode-title-line {
   width: 160px;
@@ -410,7 +416,7 @@ p {
   font-size: 32px;
   line-height: 120%;
   color: var(--clr-white);
-  margin-bottom: 82px;
+  margin-bottom: 42px;
 }
 .episode-banner-article h2 {
   font-family: var(--ff-primary);
@@ -486,6 +492,9 @@ p {
   .oldepisode-center {
     width: 70vw;
   }
+  .episode-title {
+    width: 70vw;
+  }
 }
 
 /* Old Episode */
@@ -534,4 +543,23 @@ p {
   .oldepisode-content p {
     max-width: 768px;
   }
+  .load-container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .load-btn-center {
+    width: 70vw;
+  }
+}
+.load-btn {
+  width: 100%;
+  border: none;
+  font-family: var(--ff-primary);
+  font-weight: 700;
+}
+.load-container {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
 }
