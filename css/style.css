@@ -481,6 +481,11 @@ p {
     max-width: 768px;
   }
 }
+@media screen and (min-width: 998px) {
+  .episode-center {
+    width: 70vw;
+  }
+}
 
 /* Old Episode */
 .old-epispde-container {
