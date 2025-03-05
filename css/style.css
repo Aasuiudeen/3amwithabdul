@@ -482,7 +482,8 @@ p {
   }
 }
 @media screen and (min-width: 998px) {
-  .episode-center {
+  .episode-center,
+  .oldepisode-center {
     width: 70vw;
   }
 }
