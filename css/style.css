@@ -563,3 +563,44 @@ p {
   display: flex;
   justify-content: center;
 }
+
+/* Available on thes platform */
+
+.platform {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.platform {
+  color: var(--clr-black);
+  font-family: var(--ff-primary);
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+.platform-center-container {
+  background-color: var(--clr-lemon);
+  margin-top: 56px;
+}
+.platform-tittle h1 {
+  font-family: var(--ff-primary);
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 125%;
+  color: #212121;
+}
+.platform-line {
+  background: #333;
+  height: 3px;
+}
+.platform-tittle {
+  padding: 56px 0;
+}
+@media screen and (min-width: 778px) {
+  .platform-content-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+  .platform-tittle h1 {
+  }
+}
