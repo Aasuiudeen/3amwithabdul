@@ -138,7 +138,7 @@ p {
 }
 @media screen and (min-width: 992px) {
   .section-center {
-    width: 95vw;
+    width: 90vw;
   }
 }
 /* Nav styles */
@@ -571,9 +571,7 @@ p {
   gap: 16px;
   align-items: center;
 }
-.platform-center {
-  width: 70vw;
-}
+
 .platform {
   color: var(--clr-black);
   font-family: var(--ff-primary);
@@ -604,6 +602,95 @@ p {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
   }
-  .platform-tittle h1 {
+  .platform-center {
+    width: 70vw;
+  }
+}
+
+/* Guardian Style */
+
+.guardian-id h3 {
+  font-family: var(--ff-primary);
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--clr-lemon);
+}
+.guardian-id p {
+  font-family: var(--ff-primary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--clr-white);
+}
+.guardian-id {
+  position: absolute;
+  bottom: 5%;
+  left: 7%;
+}
+.guardian-img-container {
+  position: relative;
+}
+.guardian-img-container img {
+  border-radius: 8px;
+}
+.guardian-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+}
+.guardian-comment {
+  margin-top: 86px;
+}
+.guardian-comment-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),
+    url(/images/the-guardian/guardian4.png) center/cover;
+  object-fit: cover;
+  height: 800px;
+  position: relative;
+}
+.g-img2 {
+  display: none;
+  overflow: hidden;
+}
+.guardian-c-text {
+  position: absolute;
+  bottom: 15%;
+  padding: 0 24px;
+}
+.guardian-c-text p {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--clr-grey3);
+  margin-bottom: 16px;
+}
+.guardian-c-text h3 {
+  font-family: var(--ff-primary);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: var(--clr-white);
+}
+@media screen and (min-width: 778px) {
+  .guardian-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .guardian-center {
+    width: 70vw;
+  }
+  .guardian-comment-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),
+      url(/images/the-guardian/guardian5.png) center/cover;
+    max-height: 600px;
+  }
+  .guardian-c-text {
+    max-width: 556px;
+  }
+  .guardian-c-text {
+    bottom: 15%;
+    /* padding: 0 56px; */
+    left: 10%;
   }
 }
