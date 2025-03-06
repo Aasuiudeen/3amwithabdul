@@ -694,3 +694,50 @@ p {
     left: 10%;
   }
 }
+
+/* Level up Styling */
+
+.level-up-sticker {
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  display: flex;
+  position: absolute;
+  border-radius: 6px;
+  padding: 8px;
+  gap: 8px;
+}
+.sticker1 {
+  top: 20%;
+  left: 20px;
+}
+.sticker2 {
+  top: 10%;
+  right: 20px;
+}
+.level-up-container {
+  /* max-width: 500px; */
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  margin: 86px 0;
+}
+.level-up-container h3 {
+  font-family: var(--ff-primary);
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  text-align: center;
+  max-width: 300px;
+}
+.level-up-sticker p {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+}
+.level-up-center {
+  background-color: var(--clr-lemon);
+  position: relative;
+}
