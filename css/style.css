@@ -571,6 +571,9 @@ p {
   gap: 16px;
   align-items: center;
 }
+.platform-center {
+  width: 70vw;
+}
 .platform {
   color: var(--clr-black);
   font-family: var(--ff-primary);
