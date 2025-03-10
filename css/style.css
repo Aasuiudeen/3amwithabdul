@@ -801,7 +801,7 @@ p {
   }
   .guest-center {
     width: 70vw;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
   }
   .arrow-container {
     visibility: visible;
