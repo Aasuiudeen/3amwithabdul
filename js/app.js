@@ -6,7 +6,6 @@ const sliderImage = [
     img2: "pexels-cottonbro-studio-6144024.png",
   },
 ];
-
 const NewEpisodes = [
   {
     img: "/images/episode-images/newepisode.png",
@@ -14,7 +13,6 @@ const NewEpisodes = [
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, amet ex cumque modi, nihil, temporibus aut molestias dicta consectetur maiores dolor atque in sequi distinctio quod. Veritatis in sequi cupiditate?",
   },
 ];
-
 const OldEpisodes = [
   {
     img: "/images/episode-images/img-1.png",
@@ -40,6 +38,33 @@ const OldEpisodes = [
     img: "/images/episode-images/img-5.png",
     header: "Building and maintainig healthy relationships",
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, amet ex cumque modi, nihil, temporibus aut molestias dicta consectetur maiores dolor atque in sequi distinctio quod. Veritatis in sequi cupiditate?",
+  },
+];
+const guest = [
+  {
+    img: "/images/episode-images/Guest1.png",
+    name: "Jonny Walker",
+    brand: "Musician",
+  },
+  {
+    img: "/images/episode-images/Guest2.png",
+    name: "Kylie Pinup",
+    brand: "C.E.O Startup",
+  },
+  {
+    img: "/images/episode-images/Guest3.png",
+    name: "Jovial sisters",
+    brand: "Music group",
+  },
+  {
+    img: "/images/episode-images/Guest4.png",
+    name: "Joshua Waish",
+    brand: "Chef",
+  },
+  {
+    img: "/images/episode-images/Guest5.png",
+    name: "Nancy Greenwood",
+    brand: "Tutor",
   },
 ];
 
@@ -178,4 +203,24 @@ function getoldEpisodes(oldepisodesItems) {
   });
   newdisplayEpisode = newOldEpisodes.join("");
   oldEpisode.innerHTML = newdisplayEpisode;
+}
+
+// Guest js
+const guestContainer = document.querySelector(".max-img-container");
+window.addEventListener("DOMContentLoaded", function () {
+  getGuest(guest);
+});
+
+function getGuest(newguestItem) {
+  const newGuest = newguestItem.map(function (item) {
+    return `<div class="img-container-1">
+                  <img src=${item.img} alt="">
+                  <div class="guest-id">
+                  <h3>${item.name}</h3>
+                  <p>${item.brand}</p>
+                  </div>
+                </div>`;
+  });
+  newdisplayGuest = newGuest.join("");
+  guestContainer.innerHTML = newdisplayGuest;
 }
