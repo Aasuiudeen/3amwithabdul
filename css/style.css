@@ -814,7 +814,7 @@ p {
 /* Newsletter Styling  */
 .news-center {
   background-color: var(--clr-white);
-  padding: 24px;
+  padding: 0;
 }
 .news-content {
   background-color: var(--clr-lemon);
@@ -967,5 +967,134 @@ p {
   }
   .footer-bottom p {
     margin-top: 0px;
+  }
+}
+
+/* End of about styling */
+
+/* About Styling */
+.about-text h1 {
+  font-family: var(--ff-primary);
+  font-weight: 1000;
+  font-size: 40px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--clr-white);
+  max-width: 350px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+}
+.about-container {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 778px) {
+  .about-text h1 {
+    font-size: 64px;
+    max-width: 1000px;
+  }
+}
+
+.guiding-center {
+  background-color: #dcdbdb;
+}
+/* .guiding-background {
+  width: 90vw;
+} */
+.guiding-container {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+.guiding-img-container img {
+  border-radius: 20px;
+  /* height: 100%; */
+}
+.guiding-img-container {
+  margin-bottom: 40px;
+}
+.about-line {
+  background: #333;
+}
+.about-title h1 {
+  color: #121212;
+}
+
+.guiding-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about-cards {
+  border-radius: 16px;
+  padding: 50px 24px;
+  background-color: var(--clr-white);
+}
+.about-cards h3 {
+  font-family: var(--ff-primary);
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 100%;
+  color: var(--clr-white);
+  background-color: #212121;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-cards h4 {
+  font-family: var(--ff-primary);
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 100%;
+  color: #212121;
+}
+.about-cards p {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: -0.01em;
+  color: #212121;
+  max-width: 500px;
+}
+.card2 {
+  background: #e0e89c;
+}
+
+@media screen and (min-width: 778px) {
+  .guardian-img-container {
+    margin-bottom: 0px;
+  }
+  .about-cards p {
+    max-width: 800px;
+  }
+  .about-cards {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .guiding-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 70vw;
+  }
+  .guiding-steps {
+    align-items: center;
+    justify-content: center;
+  }
+  .guiding-img-container {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
