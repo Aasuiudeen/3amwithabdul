@@ -996,6 +996,9 @@ p {
     font-size: 64px;
     max-width: 1000px;
   }
+  .about-container {
+    height: auto;
+  }
 }
 
 .guiding-center {
@@ -1008,6 +1011,7 @@ p {
   width: 90vw;
   margin: 0 auto;
   max-width: 1280px;
+  padding-bottom: 80px;
 }
 .guiding-img-container img {
   border-radius: 20px;
@@ -1030,7 +1034,7 @@ p {
 }
 .about-cards {
   border-radius: 16px;
-  padding: 50px 24px;
+  padding: 36px 24px;
   background-color: var(--clr-white);
 }
 .about-cards h3 {
@@ -1072,7 +1076,7 @@ p {
     margin-bottom: 0px;
   }
   .about-cards p {
-    max-width: 800px;
+    max-width: 700px;
   }
   .about-cards {
     display: flex;
@@ -1082,19 +1086,92 @@ p {
 
 @media screen and (min-width: 1280px) {
   .guiding-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     gap: 40px;
     width: 70vw;
+    .guiding-steps {
+      align-items: center;
+      justify-content: center;
+    }
+    .guiding-img-container {
+      margin-bottom: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
-  .guiding-steps {
-    align-items: center;
-    justify-content: center;
+}
+/* Fact About Us*/
+
+.fact-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+.fact-cards {
+  border-radius: 16px;
+  background: #f5f5f5;
+  padding: 36px 16px;
+}
+.fact-cards p {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: -0.01em;
+  color: #4f4f4f;
+  /* max-width: 300px; */
+}
+.fact-cards h3 {
+  font-family: var(--ff-primary);
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 120%;
+  color: #333;
+}
+.fact-img-container img {
+  border-radius: 16px;
+  height: 100%;
+}
+.fact-img-container {
+  height: 100%;
+}
+
+.f-card2 {
+  background: #e0e89c;
+}
+.f-card3 {
+  background: #f4eebe;
+}
+.fact-center{
+  width: 90vw;
+  margin: 0 auto;
+}
+@media screen and (min-width: 778px) {
+  .fact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "a b d"
+      "c c d";
   }
-  .guiding-img-container {
-    margin-bottom: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .f-card1 {
+    grid-area: a;
+  }
+  .f-card2 {
+    grid-area: b;
+    background: #e0e89c;
+  }
+  .f-card3 {
+    grid-area: c;
+    background: #f4eebe;
+  }
+  .f-card4 {
+    grid-area: d;
+  }
+  .fact-center {
+    width: 70vw;
   }
 }
