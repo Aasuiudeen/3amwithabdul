@@ -224,3 +224,17 @@ function getGuest(newguestItem) {
   newdisplayGuest = newGuest.join("");
   guestContainer.innerHTML = newdisplayGuest;
 }
+
+// FAQ Section
+
+const faqQuestion = document.querySelector(".faq-question");
+
+faqQuestion.forEach(function (question) {
+  const faqBtn = question.querySelector(".faq-btn");
+
+  faqBtn.addEventListener("click", function (e) {
+    const newQuestion = e.currenTarget;
+
+    console.log(newQuestion);
+  });
+});
