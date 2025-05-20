@@ -225,16 +225,16 @@ function getGuest(newguestItem) {
   guestContainer.innerHTML = newdisplayGuest;
 }
 
-// FAQ Section
+// // FAQ Section
 
-const faqQuestion = document.querySelector(".faq-question");
+// const faqQuestion = document.querySelectorAll(".faq-question");
 
-faqQuestion.forEach(function (question) {
-  const faqBtn = question.querySelector(".faq-btn");
+// faqQuestion.forEach(function (question) {
+//   const faqBtn = question.querySelector(".faq-btn");
 
-  faqBtn.addEventListener("click", function (e) {
-    const newQuestion = e.currenTarget;
+//   faqBtn.addEventListener("click", function (e) {
+//     const newQuestion = e.currenTarget;
+//   });
+// });
 
-    console.log(newQuestion);
-  });
-});
+// console.log("work");
