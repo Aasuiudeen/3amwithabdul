@@ -818,7 +818,7 @@ p {
 /* Newsletter Styling  */
 .news-center {
   background-color: var(--clr-white);
-  padding: 0;
+  padding: 80px 0;
 }
 .news-content {
   background-color: var(--clr-lemon);
@@ -830,6 +830,7 @@ p {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.48)),
     url(/images/episode-images/news-background.png) center/cover;
   border-radius: 18px;
+  width: 70vw;
 }
 .news-title h1 {
   font-family: var(--ff-primary);
@@ -858,9 +859,9 @@ p {
   letter-spacing: -0.01em;
   text-align: center;
   color: #1d1f25;
-  max-width: 260px;
+  max-width: 400px;
   margin: 0 auto;
-  margin-bottom: 52px;
+  margin-bottom: 24px;
 }
 .news-p2 {
   font-family: var(--ff-primary);
@@ -900,6 +901,7 @@ p {
     gap: 16px;
     justify-content: center;
   }
+
   .news-btn {
     width: auto;
     padding: 12px 36px;
@@ -907,9 +909,9 @@ p {
   .news-email {
     width: 391px;
   }
-  .news-content {
+  /* .news-content {
     padding: 36px 226px;
-  }
+  } */
   .news-p2 {
     margin: 0 auto;
     text-align: center;
@@ -1015,7 +1017,7 @@ p {
   width: 90vw;
   margin: 0 auto;
   max-width: 1280px;
-  padding: 80px 0;
+  padding-bottom: 80px;
 }
 .guiding-img-container img {
   border-radius: 20px;
@@ -1475,5 +1477,64 @@ p {
     grid-template-columns: 1fr 1fr;
     width: 70vw;
     align-items: center;
+  }
+}
+
+/* Partnership Styling */
+.become-top h3 {
+  font-family: var(--ff-primary);
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 115%;
+  text-align: center;
+  color: #fff;
+  max-width: 288px;
+}
+.b-b-img2 {
+  display: none;
+  height: 0;
+}
+.become-container {
+  /* height: calc(100vh - 80px); */
+  display: grid;
+  align-items: center;
+  padding: 80px 0;
+  gap: 80px;
+}
+.become-top {
+  display: grid;
+  justify-content: center;
+}
+.b-b-img1 {
+  border-radius: 16px;
+}
+.become-btn-ctn {
+  display: flex;
+  justify-content: center;
+}
+.become-btn {
+  background-color: white;
+}
+.become-center {
+  background: #111111;
+}
+.become-title h1 {
+  color: var(--clr-white);
+}
+.become-line {
+  background-color: var(--clr-white);
+}
+@media screen and (min-width: 778px) {
+  .b-b-img1 {
+    display: none;
+    height: 0;
+    width: 10px;
+  }
+  .b-b-img2 {
+    display: flex;
+    height: 100%;
+  }
+  .become-top h3 {
+    max-width: 450px;
   }
 }
