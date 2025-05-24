@@ -1538,3 +1538,47 @@ p {
     max-width: 450px;
   }
 }
+
+/* Visit Styling */
+.visit-center {
+  background-color: white;
+}
+.visit-max-container {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding-bottom: 80px;
+}
+.visit-c-img img {
+  border-radius: 16px;
+}
+.visit-c-img {
+  margin-bottom: 16px;
+}
+.visit-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.visit-c1 p {
+  font-family: var(--ff-primary);
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 120%;
+  color: #333;
+  margin-bottom: 8px;
+}
+.visit-c1 h3 {
+  font-family: var(--ff-primary);
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 120%;
+  color: #000;
+}
+@media screen and (min-width: 778px) {
+  .visit-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
