@@ -1582,3 +1582,48 @@ p {
     grid-template-rows: 1fr 1fr;
   }
 }
+
+/* Myth styling */
+.myths-item1 {
+  border-radius: 4px;
+  padding: 9px 13px;
+  display: inline-flex;
+  background: #4f4f4f;
+  justify-content: center;
+}
+.myths-item1 h3 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: -0.01em;
+  color: #aab91e;
+}
+.myth-title h1 {
+  font-family: var(--ff-primary);
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 120%;
+  color: #fff;
+}
+.myth-title p {
+  font-family: var(--ff-primary);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: -0.01em;
+  color: #fff;
+  text-transform: uppercase;
+}
+.myth-item-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+@media screen and (min-width: 778px) {
+  .myth-item-container {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}

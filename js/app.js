@@ -67,6 +67,74 @@ const guest = [
     brand: "Tutor",
   },
 ];
+// const myths = [
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+//   {
+//     mythsItems: "Job Hunting",
+//   },
+// ];
 
 const hamburger = document.querySelector(".hamburger");
 const aside = document.querySelector("aside");
@@ -169,6 +237,18 @@ function getnewEpisode(newepisodeItems) {
   newdisplay = newMenu.join("");
   episodesCenter.innerHTML = newdisplay;
 }
+
+// const mythContainer = document.querySelector("myth-item-container");
+
+// function getMyths(newMyths) {
+//   const eachMyths = (myths.map = (item) => {
+//     return `<div class="myths-item1">
+//                     <h3>${myths.mythsItems}</h3>
+//                 </div>`;
+//   });
+//   newEachMyths = eachMyths.join("");
+//   mythContainer.innerHTML = newEachMyths;
+// }
 
 function getoldEpisodes(oldepisodesItems) {
   const newOldEpisodes = oldepisodesItems.map(function (item) {
