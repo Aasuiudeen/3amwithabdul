@@ -22,3 +22,9 @@ btns.forEach(function (btn) {
     console.log(question);
   });
 });
+
+//Hamburger button
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("open");
+  aside.classList.toggle("open-sidebar");
+});

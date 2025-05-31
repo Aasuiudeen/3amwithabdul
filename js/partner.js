@@ -126,3 +126,9 @@ function getRecord(getRecordItems) {
 window.addEventListener("DOMContentLoaded", function () {
   getRecord(record);
 });
+
+//Hamburger button
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("open");
+  aside.classList.toggle("open-sidebar");
+});

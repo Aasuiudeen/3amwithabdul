@@ -1584,6 +1584,9 @@ p {
 }
 
 /* Myth styling */
+.myth-center{
+  padding: 80px 0;
+}
 .myths-item1 {
   border-radius: 4px;
   padding: 9px 13px;
@@ -1626,9 +1629,19 @@ p {
   .myth-item-container {
     grid-template-columns: repeat(7, 1fr);
   }
+  .myth-center, .record-center, .visit-container{
+  width: 70vw;
+}
+  .visit-container{
+  width: 70vw;
+  margin: 0 auto;
+}
 }
 
 /* Recording Section */
+.record-center{
+  padding: 80px 0;
+}
 
 .grey-circle {
   border-radius: 100000000px;
